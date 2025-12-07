@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cgpia — CGPA Calculator</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="logo">
+        <img src="CGPALOGO.png" alt="Cgpia Logo" class="logo-img">
+        <div>
+          <h1 class="app-title">Cgpia</h1>
+          <p class="subtitle">CGPA Percentage calculator</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- LEFT: inputs -->
+      <section class="panel" id="inputPanel">
+        <h2>Subjects</h2>
+        <div id="subjectList" class="subject-list" aria-live="polite"></div>
+
+        <div class="controls">
+          <button id="addBtn" class="btn btn-ghost">+ Add Subject</button>
+          <button id="calcBtn" class="btn btn-primary">Calculate</button>
+          <button id="resetBtn" class="btn btn-ghost">Reset</button>
+        </div>
+
+        <p class="help">Grades: O, A+, A, B+, B, C, RA, SA — Credits: integer (e.g. 3)</p>
+      </section>
+
+      <!-- RIGHT: results -->
+      <aside class="panel results" id="resultPanel">
+        <div class="result-top">
+          <div class="sgpa-box">
+            <div class="label">CGPA</div>
+            <div id="sgpaDisplay" class="big">—</div>
+            <div id="percentDisplay" class="muted">—</div>
+          </div>
+
+          <div class="credits-box">
+            <div class="label">Total Credits</div>
+            <div id="totalCredits" class="big small">0</div>
+          </div>
+        </div>
+
+        <div id="motivation" class="motivation" style="display:none"></div>
+         
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer">
+        Made with ❤️ — SANJEEV G <br>
+      
+        <a href="https://www.linkedin.com/in/sanjeev-gerant" target="_blank" class="linkedin-link">
+          <img src="linkedin1.png" alt="LinkedIn" class="linkedin-icon">
+        </a>
+      </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
